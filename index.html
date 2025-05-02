@@ -4,18 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma Life Plus: evoluir com leveza e propósito!">
     <title>Life Plus</title>
-
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="icon" href="assets/icons/favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-
-
 <body>
-    <header>
+
+    <header role="banner">
         <div class="container-header">
-            <img src="#" alt="Logo Life Plus" class="logo">
-            <nav class="menu-central">
+            <h1>
+                <a href="index.html" aria-label="Voltar para a página inicial">
+                    <img src="assets/img/logo-lifeplus.png" alt="Logo da plataforma Life Plus" class="logo">
+                </a>
+            </h1>
+            <nav class="menu-central" aria-label="Menu principal">
                 <ul class="nav-list">
                     <li><a href="#saude-fisica">Saúde Física</a></li>
                     <li><a href="#saude-mental">Saúde Mental</a></li>
@@ -24,108 +33,118 @@
                 </ul>
             </nav>
             <div class="login">
-                <a href="#login">Login</a>
+                <a href="#login">
+                    <img src="assets/icons/user_icon.png" alt="Ícone de usuário" class="icon-user">
+                    Login
+                </a>
             </div>
+
         </div>
     </header>
 
-    <main>
-
+    <main role="main">
         <section class="banner">
-            <img src="thumb-1920-567147.png" alt="Banner Life Plus" class="banner-image">
-            <button class="inscrever-btn">Me inscrever</button>
+            <img src="assets/img/banner1.png" alt="Banner da plataforma com o texto 'Evoluir com leveza e propósito'"
+                class="banner-image">
+            <button class="inscrever-btn" aria-label="Inscreva-se na plataforma Life Plus">Me inscrever</button>
         </section>
 
-
-
-        <h1 class="main-title">Life Plus – Sua Saúde, Sua Evolução</h1>
-
-        <section class="monitoramento">
+        <section class="monitoramento" aria-labelledby="titulo-monitoramento">
             <div class="container">
-                <h2>Monitoramento completo da sua saúde</h2>
+                <h2 id="titulo-monitoramento">Monitoramento completo da sua saúde</h2>
                 <p>Descubra como otimizar seu bem-estar e saiba como nossa plataforma pode transformar sua vida.</p>
             </div>
             <div class="cards-container">
                 <div class="card">
-                    <a href="">
-                        <img src="" alt="Card 1" class="card-img"></src>
-                    </a>
+                    <a href="#"><img src="assets/img/img1.png" alt="Ilustração sobre atividade física"
+                            class="card-img"></a>
                 </div>
                 <div class="card">
-                    <a href="">
-                        <img src="" alt="Card 1" class="card-img"></src>
-                    </a>
+                    <a href="#"><img src="assets/img/img2.png" alt="Ilustração sobre saúde mental" class="card-img"></a>
                 </div>
                 <div class="card">
-                    <a href="">
-                        <img src="" alt="Card 1" class="card-img"></src>
-                    </a>
+                    <a href="#"><img src="assets/img/img3.png" alt="Ilustração sobre ciclo menstrual"
+                            class="card-img"></a>
                 </div>
                 <div class="card">
-                    <a href="">
-                        <img src="" alt="Card 1" class="card-img"></src>
-                    </a>
+                    <a href="#"><img src="assets/img/img4.png" alt="Ilustração sobre hábitos de saúde"
+                            class="card-img"></a>
                 </div>
             </div>
         </section>
 
+        <section class="como-funciona-detalhado">
+            <h2>Como Funciona na Prática</h2>
+            <p>Nossa plataforma auxilia você integrando dados, metas e feedbacks para transformar sua jornada de bem-estar.</p>
+            <div class="como-bloco-superior">
+                <p>
+                    A Life+ oferece uma plataforma completa que vai além do exercício físico, permitindo que você registre e acompanhe hábitos como ingestão de água, atividade física, humor e controle de tabagismo e alcoolismo. 
+                    <br>Com gamificação e feedbacks personalizados por IA, você é incentivado a manter essas práticas, acompanhando sua evolução com clareza. 
+                    <br>Todos os dados são acessíveis a profissionais de saúde para avaliações precisas e orientações personalizadas.
+                </p>
+                <img src="assets/img/img5.png" alt="Usuária segurando halteres" class="como-img">
+            </div>
 
-        <section class="como-funciona">
+            <div class="como-bloco-inferior">
+                <img src="assets/img/img6.png" alt="Usuária com tapete de yoga" class="como-img-1">
+                <p>
+                    • Registre suas atividades diárias e indicadores de saúde.<br>
+                    • Acompanhe seu progresso com gráficos e relatórios personalizados.<br>
+                    • Receba mensagens motivacionais e feedbacks por IA.<br>
+                    • Conecte-se com outras pessoas em desafios e práticas em grupo.
+                </p>
+            </div>
+        </section>
+
+        <section class="depoimentos" aria-labelledby="titulo-depoimentos">
             <div class="container">
-                <h2>Como Funciona</h2>
-                <p>Nossa plataforma auxilia você integrando dados, metas e feedbacks para transformar sua jornada de
-                    bem-estar.</p>
+                <h2 id="titulo-depoimentos">Depoimentos</h2>
+                <article class="card">
+                    <p>“Depois que comecei a usar o Life Plus, minha rotina ficou muito mais saudável.”</p>
+                    <span>Usuária X</span>
+                </article>
             </div>
         </section>
 
-        <section class="depoimentos">
+        <section class="faq" aria-labelledby="titulo-faq">
             <div class="container">
-                <h2>Depoimentos</h2>
-                <div class="cards-depoimentos">
-                    <div class="card">
-                        <p>“Depois que comecei a usar o Life Plus, minha rotina ficou muito mais saudável.”</p>
-                        <span>Usuária X</span>
+                <h2 id="titulo-faq">Perguntas Frequentes</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq1">Meus dados de saúde são
+                        compartilhados com profissionais?</button>
+                    <div class="faq-answer" id="faq1" hidden>
+                        <p>Seus dados só são compartilhados com profissionais autorizados mediante seu consentimento.
+                        </p>
                     </div>
                 </div>
-            </div>
-            </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq2">Preciso pagar para usar a
+                        plataforma?</button>
+                    <div class="faq-answer" id="faq2" hidden>
+                        <p>Não, o acesso à plataforma é gratuito com recursos básicos. Recursos premium estarão
+                            disponíveis futuramente.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq3">O que acontece se eu
+                        esquecer de registrar meus hábitos?</button>
+                    <div class="faq-answer" id="faq3" hidden>
+                        <p>A plataforma envia lembretes e mantém você motivado com feedbacks personalizados.</p>
+                    </div>
+                </div>
             </div>
         </section>
-
-
-        <section class="faq">
-            <div class="container">
-                <h2>Perguntas Frequentes</h2>
-                <div class="faq-item">
-                    <button class="faq-question">Meus dados de saúde são compartilhados com profissionais? </button>
-                    <div class="faq-answer">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Preciso pagar para usar a plataforma?</button>
-                    <div class="faq-answer">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">O que acontece se eu esquecer de registrar meus hábitos?</button>
-                    <div class="faq-answer">
-                        <p></p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container-footer">
             <div class="footer-col">
                 <h3>Explore</h3>
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#inicio" aria-label="Ir para o início da página">Início</a></li>
                     <li><a href="#saude-fisica">Saúde Física</a></li>
                     <li><a href="#saude-mental">Saúde Mental</a></li>
                     <li><a href="#ciclo-menstrual">Ciclo Menstrual</a></li>
@@ -160,22 +179,24 @@
                 </ul>
             </div>
 
-            <div class="footer-col">
-                <h3>Redes Sociais</h3>
-                <ul>
-                    <li><a href="#" target="_blank">Instagram</a></li>
-                    <li><a href="#" target="_blank">LinkedIn</a></li>
-                    <li><a href="#" target="_blank">Facebook</a></li>
-                </ul>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <img src="assets/img/icon-instagram.png" alt="Instagram">
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <img src="assets/img/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <img src="assets/img/icon-facebook.png" alt="Facebook">
+                </a>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2025 Life Plus.</p>
-            <p>Desenvolvido por Evelin Hashimoto, Flavia Santana e Rebecca Martins</p>
-            <p>Projeto FIAP Enterprise Challenge</p>
-        </div>
     </footer>
+
+    <div class="footer-bottom">
+        <p>© 2025 Life Plus.</p>
+        <p>Desenvolvido por Evelin Hashimoto, Flavia Santana e Rebecca Martins</p>
+        <p>Projeto FIAP Enterprise Challenge</p>
+    </div>
 
 </body>
 
