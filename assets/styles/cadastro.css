@@ -80,7 +80,7 @@ header {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 850px;
+    margin-left: 750px;
   }
   
   .cadastro-box h2 {
@@ -117,7 +117,7 @@ header {
     padding: 10px 25px;
     border-radius: 20px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400px;
   }
 
 .faq-item {
