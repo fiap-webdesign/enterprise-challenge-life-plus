@@ -31,12 +31,10 @@ A Life Plus identificou que a correria do dia a dia faz com que muitas mulheres 
   - `<aria-labels>` em links e botões.
   - Estrutura semântica com uso de `<main>`, `<header>`, `<section>` e `<footer>`.
 
-  ## Trabalho Colaborativo
+## Trabalho Colaborativo
 
 O desenvolvimento do projeto **Life Plus** está sendo realizado de forma colaborativa entre todas as integrantes do grupo. Desde o início, as decisões têm sido tomadas em conjunto durante as reuniões, com troca constante de ideias, sugestões e feedbacks.
-
 Cada etapa, desde o protótipo inicial no Figma até a implementação do layout em HTML e CSS, está sendo construída coletivamente. Durante os encontros, discutimos o que será feito, quem ficará responsável por cada parte e quais ajustes são necessários para garantir a coesão visual e funcional do projeto.
-
 O processo está em evolução, com todas contribuindo ativamente em diferentes frentes. Seguimos aprimorando o site a cada reunião, ajustando detalhes, revisando o código e organizando a apresentação final para que reflita o esforço conjunto e a identidade do grupo.
 
 
