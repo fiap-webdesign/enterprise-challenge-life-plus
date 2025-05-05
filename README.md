@@ -1,7 +1,79 @@
 <h1>Life Plus: evoluir com leveza e propósito!</h1>
 
-A Life Plus identificou que a correria do dia a dia faz com que muitas mulheres negligenciem seu autocuidado, deixando de lado hábitos essenciais como atividade física, hidratação, acompanhamento do ciclo menstrual e saúde emocional. 
-<br>Reconhecendo que saúde vai além da ausência de doenças, envolvendo bem-estar físico, mental e social, a Life Plus foi criada como uma plataforma de acolhimento e incentivo ao autocuidado feminino. Por meio do registro de hábitos de forma intuitiva, aliado à gamificação e feedbacks personalizados por IA, a plataforma torna a evolução de cada mulher visível e motivadora, oferecendo relatórios completos para profissionais de saúde e promovendo a conexão entre usuárias através de desafios em grupo.
+O Life Plus nasce com o propósito de cuidar da saúde integral da mulher de forma leve, acolhedora e motivadora.
+
+Em meio a uma rotina intensa e exigente, manter o equilíbrio entre corpo, mente e ciclos femininos pode ser desafiador. Pensando nisso, desenvolvemos uma plataforma voltada especialmente para acompanhar e apoiar mulheres em todas as fases da vida, promovendo bem-estar físico, emocional e autocuidado.
+Mais do que um app de monitoramento, o Life Plus é uma ferramenta de apoio real para a construção de hábitos positivos e conscientes.
+Por meio do registro de dados como atividades físicas, ingestão de água, humor, controle de peso, saúde emocional, ciclo menstrual e outros indicadores relevantes, a usuária visualiza sua evolução com clareza, recebe feedbacks personalizados com apoio da nossa IA e ainda tem acesso a relatórios detalhados, ideais para compartilhar com profissionais de saúde.
+Além disso, a plataforma estimula a conexão entre mulheres, com desafios semanais, atividades em grupo e incentivo ao autocuidado coletivo, fortalecendo o senso de comunidade.
+Nosso propósito é claro: acolher, acompanhar e empoderar cada mulher em sua jornada de bem-estar.
+
+📋 Destaques:
+• Acompanhamento da saúde física, emocional, de ciclo mentrual e de ajuda com tabagismo e alcoolismo
+• Sistema de gamificação com pontos, níveis e recompensas na plataforma
+• Feedbacks motivacionais personalizados para mulheres com o suporte da nossa IA
+• Relatórios de evolução disponíveis para download e uso em consultas médicas
+• Registro e controle do ciclo menstrual integrado ao cotidiano
+• Desafios semanais e conexão entre usuárias
+
+## 🧩 Identificação do Problema
+
+Durante a fase inicial do projeto, realizamos uma pesquisa para entender os principais desafios enfrentados por mulheres na gestão da própria saúde. Observamos que, em meio à rotina agitada e sobrecarregada, muitas mulheres relatam dificuldades em manter o equilíbrio entre corpo, mente e aspectos hormonais, como o ciclo menstrual. Além disso, notamos uma carência de plataformas que ofereçam suporte completo, acolhedor e personalizado para o bem-estar feminino.
+
+Outro ponto identificado foi a falta de integração entre dados de saúde emocional, física e reprodutiva em um único ambiente digital, além da ausência de estímulos consistentes para o autocuidado diário.
+
+
+** 💡 Solução Proposta
+
+Com base nos dados coletados e nas necessidades observadas, desenvolvemos o **Life Plus**: uma plataforma pensada para acompanhar a saúde integral da mulher de forma leve, motivadora e empática.
+A proposta é reunir em um só lugar funcionalidades como registro de atividades físicas, ingestão de água, humor, controle do ciclo menstrual e bem-estar emocional. A usuária também conta com relatórios de progresso, feedbacks personalizados com suporte de IA e recursos de gamificação que incentivam a criação de hábitos saudáveis.
+A plataforma ainda promove a conexão entre mulheres por meio de desafios e práticas em grupo, fortalecendo o senso de comunidade e empoderamento coletivo.
+
+O Life Plus surge, portanto, como uma resposta prática e humana a uma dor real, com o objetivo de apoiar mulheres em sua jornada de autocuidado com autonomia e acolhimento.
+
+## 👩‍💼 Personas
+
+Após a análise de perfis potenciais de usuárias, identificamos que o **Life Plus** pode agregar valor para diferentes estilos de vida, mantendo o foco em mulheres que buscam transformação em sua saúde física, emocional e reprodutiva.
+
+### 🧍‍♀️ Mariana Lopes
+
+- **Idade:** 26 anos  
+- **Profissão:** Estudante de Direito e estagiária  
+- **Localização:** São Paulo - SP  
+- **Situação atual:** Tem uma rotina corrida, sente dores nas costas e cansaço frequente. Procura motivação para manter hábitos saudáveis.
+
+#### 🧠 Dor principal
+> “Até tento começar uma rotina saudável, mas acabo desanimando porque não vejo resultado logo e não tenho tempo de acompanhar tudo.”
+
+#### 🩺 Objetivos de saúde
+- Melhorar o condicionamento físico e o bem-estar emocional  
+- Lembrar de se hidratar e descansar  
+- Praticar desafios semanais com atividades leves, evoluindo aos poucos  
+- Acompanhar sua saúde com apoio médico anual
+
+### 🧘‍♀️ Beatriz Almeida
+
+- **Idade:** 32 anos  
+- **Profissão:** Professora de yoga e terapeuta holística  
+- **Localização:** Florianópolis - SC  
+- **Situação atual:** Mantém uma rotina física e alimentar equilibrada, mas passou por períodos de estresse e ansiedade recentemente.
+
+#### 🧠 Dor principal
+> “Cuido do meu corpo todos os dias, mas minha mente nem sempre me acompanha. Às vezes me sinto desmotivada, ou com baixa energia, sem saber o motivo.”
+
+#### 🩺 Objetivos de saúde
+- Manter o equilíbrio emocional aliado à rotina física  
+- Observar com mais clareza seus ciclos emocionais  
+- Registrar seu humor e identificar padrões internos
+
+#### 💡 Como o projeto ajuda
+- Registro diário de humor com visualização gráfica da evolução  
+- Gráficos de autoconhecimento emocional  
+- Frases motivacionais e sugestões de bem-estar mental  
+- Sistema de pontuação também para ações de cuidado emocional (ex: pausa de respiração, meditação)  
+- Feedbacks positivos como: *“Hoje você cuidou de você — isso importa!”*
+
+Junte-se a nós!
 
 <h2>Funcionalidades implementadas até o momento</h2>
 
