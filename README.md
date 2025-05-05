@@ -9,12 +9,12 @@ Além disso, a plataforma estimula a conexão entre mulheres, com desafios seman
 Nosso propósito é claro: acolher, acompanhar e empoderar cada mulher em sua jornada de bem-estar.
 
 📋 Destaques:
-• Acompanhamento da saúde física, emocional, de ciclo mentrual e de ajuda com tabagismo e alcoolismo
-• Sistema de gamificação com pontos, níveis e recompensas na plataforma
-• Feedbacks motivacionais personalizados para mulheres com o suporte da nossa IA
-• Relatórios de evolução disponíveis para download e uso em consultas médicas
-• Registro e controle do ciclo menstrual integrado ao cotidiano
-• Desafios semanais e conexão entre usuárias
+• Acompanhamento da saúde física, emocional, de ciclo mentrual e de ajuda com tabagismo e alcoolismo<br>
+• Sistema de gamificação com pontos, níveis e recompensas na plataforma<br>
+• Feedbacks motivacionais personalizados para mulheres com o suporte da nossa IA<br>
+• Relatórios de evolução disponíveis para download e uso em consultas médicas<br>
+• Registro e controle do ciclo menstrual integrado ao cotidiano<br>
+• Desafios semanais e conexão entre usuárias<br>
 
 ## 🧩 Identificação do Problema
 
