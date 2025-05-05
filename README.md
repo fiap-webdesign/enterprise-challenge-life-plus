@@ -8,7 +8,7 @@ Por meio do registro de dados como atividades físicas, ingestão de água, humo
 Além disso, a plataforma estimula a conexão entre mulheres, com desafios semanais, atividades em grupo e incentivo ao autocuidado coletivo, fortalecendo o senso de comunidade.
 Nosso propósito é claro: acolher, acompanhar e empoderar cada mulher em sua jornada de bem-estar.
 
-📋 Destaques:
+📋 Destaques:<br>
 • Acompanhamento da saúde física, emocional, de ciclo mentrual e de ajuda com tabagismo e alcoolismo<br>
 • Sistema de gamificação com pontos, níveis e recompensas na plataforma<br>
 • Feedbacks motivacionais personalizados para mulheres com o suporte da nossa IA<br>
@@ -23,7 +23,7 @@ Durante a fase inicial do projeto, realizamos uma pesquisa para entender os prin
 Outro ponto identificado foi a falta de integração entre dados de saúde emocional, física e reprodutiva em um único ambiente digital, além da ausência de estímulos consistentes para o autocuidado diário.
 
 
-** 💡 Solução Proposta
+**💡 Solução Proposta**
 
 Com base nos dados coletados e nas necessidades observadas, desenvolvemos o **Life Plus**: uma plataforma pensada para acompanhar a saúde integral da mulher de forma leve, motivadora e empática.
 A proposta é reunir em um só lugar funcionalidades como registro de atividades físicas, ingestão de água, humor, controle do ciclo menstrual e bem-estar emocional. A usuária também conta com relatórios de progresso, feedbacks personalizados com suporte de IA e recursos de gamificação que incentivam a criação de hábitos saudáveis.
@@ -53,7 +53,7 @@ Após a análise de perfis potenciais de usuárias, identificamos que o **Life P
 
 ### 🧘‍♀️ Beatriz Almeida
 
-- **Idade:** 32 anos  
+- **Idade:** 45 anos  
 - **Profissão:** Professora de yoga e terapeuta holística  
 - **Localização:** Florianópolis - SC  
 - **Situação atual:** Mantém uma rotina física e alimentar equilibrada, mas passou por períodos de estresse e ansiedade recentemente.
