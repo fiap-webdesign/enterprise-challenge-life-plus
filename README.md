@@ -73,7 +73,6 @@ Após a análise de perfis potenciais de usuárias, identificamos que o **Life P
 - Sistema de pontuação também para ações de cuidado emocional (ex: pausa de respiração, meditação)  
 - Feedbacks positivos como: *“Hoje você cuidou de você — isso importa!”*
 
-Junte-se a nós!
 
 <h2>Funcionalidades implementadas até o momento</h2>
 
@@ -96,8 +95,8 @@ Junte-se a nós!
   - Dividido em colunas com links úteis.
   - Ícones de redes sociais com links.
   - Informações institucionais no rodapé inferior.
-- **Página de login e cadastro**:
-  -Cadastro simples e de fácil entendimento.
+- **Página de login e cadastro**:<br>
+  - Cadastro simples e de fácil entendimento.
 - **Acessibilidade básica**:
   - Uso de `<alt>` em imagens.
   - `<aria-labels>` em links e botões.
