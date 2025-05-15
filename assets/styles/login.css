@@ -8,7 +8,6 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     color: #111;
     line-height: 1.6;
@@ -21,11 +20,13 @@ img {
 
 header {
     background-color: transparent;
-    height: 110px;
+    min-height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
 }
 
 .container-header {
@@ -35,6 +36,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
+    flex-wrap: wrap;
 }
 
 .container-header h1 {
@@ -50,6 +52,7 @@ header {
     list-style: none;
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .menu-central a {
@@ -58,7 +61,27 @@ header {
     font-weight: 500;
 }
 
-.login2 a{
+.breadcrumb {
+    padding: 12px 40px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.breadcrumb a {
+    color: #333399;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.login2 a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -72,103 +95,167 @@ header {
     height: 20px;
 }
 
-
-
 .login-box {
     background-color: #f3f88c;
-    padding: 80px;
+    padding: 60px 40px;
     border-radius: 20px;
-    width:450px;
+    max-width: 450px;
+    width: 90%;
     text-align: center;
-    margin-bottom: 8%;
-    align-items: center; 
-    margin: 50px;
-    margin-top:50px;
-    margin-left:750px;
-  }
-  
-  .login-box h2 {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box h2 {
     color: #333399;
-    margin-bottom:20px;
-  }
-  
-  .login-box label {
+    margin-bottom: 20px;
+}
+
+.login-box label {
     display: block;
     text-align: left;
     margin: 10px 0 5px;
     color: #333399;
     font-weight: bold;
-  }
-  
-  .login-box input {
+}
+
+.login-box input {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 8px;
     margin-bottom: 10px;
+}
 
-  }
-  
-  .buttons {
+.login-box form {
+    width: 100%;
+}
+
+.buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 15px;
-  }
-  
-  .btn-login {
+    width: 100%;
+}
+
+.btn-login {
     background-color: #5c5ce6;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
-  .btn-cadastro {
-    background-color: #e6b65c;
-    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #4343cc;
+}
+
+.texto-cadastro {
+    font-size: 16px;
+    color: #333399;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn-cadastro-secundario {
+    background-color: #E59013;
+    color: #F6F4E4;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-  }
-
-.faq-item {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-.faq-question {
-    background: #eaeaea;
-    border: none;
-    padding: 12px 16px;
-    width: 100%;
-    text-align: left;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 6px;
+.btn-cadastro-secundario:hover {
+    background-color: #cc7c0f;
 }
 
-.faq-answer {
-    margin-top: 8px;
-    background: #f9f9f9;
-    padding: 12px 16px;
-    border-radius: 6px;
+.texto-google {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.google-icon {
+    display: block;
+    margin: 10px auto 0;
+    width: 47.5px;
+    height: 53.29px;
 }
 
 footer {
     background-color: #F6F4E4;
-    padding: 40px 0 40px;
+    padding: 40px 0;
     position: relative;
 }
 
-.container-footer {
+/* Footer geral */
+footer {
+    background-color: #F6F4E4;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Wrapper principal */
+.container-footer-wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Logo e redes sociais */
+.footer-logo-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Logo */
+.footer-logo-container {
+    flex: 1;
+    min-width: 153px;
+}
+
+.footer-logo-container img {
+    width: 153.32px;
+    height: 61px;
+    object-fit: contain;
+}
+
+/* Redes sociais */
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Colunas */
+.container-footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 0 40px;
-    position: relative;
+    align-items: start;
+    text-align: left;
 }
 
 .footer-col h3 {
@@ -179,6 +266,7 @@ footer {
 
 .footer-col ul {
     list-style: none;
+    padding: 0;
 }
 
 .footer-col li {
@@ -195,30 +283,13 @@ footer {
     color: #252525;
 }
 
-.footer-social {
-    position: absolute;
-    top: 0;
-    right: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 16px;
-    margin-top: 40px;
-}
-
-.footer-social img {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-}
-
+/* Rodapé inferior */
 .footer-bottom {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
     font-size: 0.875rem;
     color: #777;
-    position: relative;
-    z-index: 1;
+    padding: 20px;
 }
 
 .sr-only {
@@ -233,51 +304,20 @@ footer {
     border: 0;
 }
 
+/* Responsividade do código */
 @media (max-width: 1024px) {
     .container-header {
         flex-direction: column;
         height: auto;
         padding: 20px;
         gap: 10px;
+        text-align: center;
     }
 
     .menu-central ul {
         flex-direction: column;
         align-items: center;
     }
-
-    .banner {
-        width: 100%;
-        height: auto;
-        border-radius: 30px;
-    }
-
-    .banner-image {
-        width: 100%;
-        height: auto;
-        border-radius: 30px;
-    }
-
-    .inscrever-btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        
-    }
-
-    @media (max-width: 768px) {
-
-        .como-bloco-superior,
-        .como-bloco-inferior {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .como-bloco-superior p,
-        .como-bloco-inferior p {
-            text-align: center;
-        }
-    }
-
 
     .footer-social {
         position: static;
@@ -300,6 +340,17 @@ footer {
     .card {
         width: 100%;
         max-width: 360px;
+    }
+
+    .como-bloco-superior,
+    .como-bloco-inferior {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .como-bloco-superior p,
+    .como-bloco-inferior p {
+        text-align: center;
     }
 }
 
@@ -325,5 +376,45 @@ footer {
     .inscrever-btn {
         font-size: 0.85rem;
         padding: 8px 16px;
+    }
+
+    .login-box {
+        padding: 40px 20px;
+    }
+
+    .btn-login,
+    .btn-cadastro-secundario {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo-social {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-logo-container img {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        text-align: center;
+    }
+
+    .footer-col h3 {
+        text-align: center;
     }
 }
