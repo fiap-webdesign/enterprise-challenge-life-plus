@@ -26,10 +26,10 @@
             </h1>
             <nav class="menu-central" aria-label="Menu principal">
                 <ul class="nav-list">
-                    <li><a href="#saude-fisica">Saúde Física</a></li>
-                    <li><a href="#saude-mental">Saúde Mental</a></li>
-                    <li><a href="#ciclo-menstrual">Ciclo Menstrual</a></li>
-                    <li><a href="#tabaco-alcool">Tabagismo e Alcoolismo</a></li>
+                    <li><a href="#saudefisica">Saúde Física</a></li>
+                    <li><a href="#saudemental">Saúde Mental</a></li>
+                    <li><a href="#ciclomenstrual">Ciclo Menstrual</a></li>
+                    <li><a href="#tabagismoealcoolismo">Tabagismo e Alcoolismo</a></li>
                 </ul>
             </nav>
             <div class="login">
@@ -46,29 +46,27 @@
         <section class="banner">
             <img src="assets/img/banner1.png" alt="Banner da plataforma com o texto 'Evoluir com leveza e propósito'"
                 class="banner-image">
-            <button class="inscrever-btn" aria-label="Inscreva-se na plataforma Life Plus">Me inscrever</button>
+            <a href="login.html"><button class="inscrever-btn" aria-label="Inscreva-se na plataforma Life Plus">Me
+                    inscrever<button></a>
         </section>
 
         <section class="monitoramento" aria-labelledby="titulo-monitoramento">
-            <div class="container">
-                <h2 id="titulo-monitoramento">Monitoramento completo da sua saúde</h2>
-                <p>Descubra como otimizar seu bem-estar e saiba como nossa plataforma pode transformar sua vida.</p>
-            </div>
             <div class="cards-container">
-                <div class="card">
-                    <a href="#"><img src="assets/img/img1.png" alt="Ilustração sobre atividade física"
-                            class="card-img"></a>
+                <div class="card" onclick="toggleCard(this)" data-anchor="saudefisica">
+                    <img src="assets/img/img1.png" alt="Ilustração sobre atividade física" class="card-img">
+                    <div class="card-text">Atividade física te ajuda a manter o equilíbrio do corpo.</div>
                 </div>
-                <div class="card">
-                    <a href="#"><img src="assets/img/img2.png" alt="Ilustração sobre saúde mental" class="card-img"></a>
+                <div class="card" onclick="toggleCard(this)" data-anchor="saudemental">
+                    <img src="assets/img/img2.png" alt="Ilustração sobre saúde mental" class="card-img">
+                    <div class="card-text">Cuide da mente como cuida do corpo. Equilíbrio é tudo.</div>
                 </div>
-                <div class="card">
-                    <a href="#"><img src="assets/img/img3.png" alt="Ilustração sobre ciclo menstrual"
-                            class="card-img"></a>
+                <div class="card" onclick="toggleCard(this)" data-anchor="ciclomenstrual">
+                    <img src="assets/img/img3.png" alt="Ilustração sobre ciclo menstrual" class="card-img">
+                    <div class="card-text">Acompanhe seu ciclo e entenda melhor seu corpo.</div>
                 </div>
-                <div class="card">
-                    <a href="#"><img src="assets/img/img4.png" alt="Ilustração sobre hábitos de saúde"
-                            class="card-img"></a>
+                <div class="card" onclick="toggleCard(this)" data-anchor="tabagismoealcoolismo">
+                    <img src="assets/img/img4.png" alt="Ilustração sobre hábitos de saúde" class="card-img">
+                    <div class="card-text">Pequenos hábitos diários fazem grande diferença.</div>
                 </div>
             </div>
         </section>
@@ -101,71 +99,97 @@
             </div>
         </section>
 
+        <section class="cta-lifeplus" role="region" aria-label="Chamada para ação - Inscrição">
+            <div class="cta-container">
+                <p class="cta-text">Pronta para transformar sua rotina e alcançar seu melhor? Junte-se ao Life Plus
+                    agora!</p>
+                <a href="login.html" class="cta-button">Me inscrever</a>
+            </div>
+        </section>
+
+
         <title>Depoimentos</title>
         <link rel="stylesheet" href="styles.css">
-        </head>
 
         <body>
-            <section class="testimonials">
-                <h2>Depoimentos</h2>
-                <p class="subtitle">Veja o que os usuários e profissionais da saúde estão dizendo</p>
+            <section class="testimonials-inline" aria-labelledby="depoimentos-titulo">
+                <h2 id="depoimentos-titulo">Depoimentos</h2>
+                <p class="subtitle">Veja o que as usuárias estão dizendo do Life Plus:</p>
 
-                <div class="testimonials-container">
-                    <div class="testimonial">
-                        <h3>Camila Rodrigues, 27 anos<br><span>São Paulo/SP</span></h3>
-                        <p>“O Life+ foi um divisor de águas na minha rotina! Eu sempre tive dificuldade em acompanhar
-                            minha saúde de forma prática, mas com o app ficou tudo tão simples. Consigo registrar minha
-                            alimentação, hidratação e exercícios de forma rápida. Sem falar que as dicas personalizadas
-                            são incríveis! Me sinto muito mais motivada e saudável desde que comecei a usar.”</p>
+                <div class="testimonials-row">
+                    <div class="testimonial-box">
+                        <h3>Camila Rodrigues, 27<br><span>São Paulo/SP</span></h3>
+                        <p>“O Life+ foi um divisor de águas na minha rotina! Com o app ficou tudo tão simples. As dicas
+                            personalizadas são incríveis!”</p>
                     </div>
 
-                    <div class="testimonial">
-                        <h3>Fernanda Silva, 42 anos<br><span>Belo Horizonte/MG</span></h3>
-                        <p>“Nunca fui muito fã de aplicativos, mas o Life+ mudou minha opinião. O design é intuitivo, os
-                            gráficos de evolução são claros e realmente ajudam a entender meu progresso. Já perdi peso,
-                            melhorei meu sono e sinto que estou cuidando melhor da minha saúde. Recomendo pra quem quer
-                            uma ferramenta prática e confiável no dia a dia!”</p>
+                    <div class="testimonial-box">
+                        <h3>Fernanda Silva, 42<br><span>Belo Horizonte/MG</span></h3>
+                        <p>“Nunca fui fã de apps, mas o Life+ mudou minha opinião. Já perdi peso, melhorei meu sono e
+                            cuido melhor da minha saúde.”</p>
                     </div>
 
-                    <div class="testimonial">
-                        <h3>Ana Lúcia Souza, 35 anos<br><span>Curitiba/PR</span></h3>
-                        <p>“O que eu mais amo no Life+ é como ele integra todos os aspectos da minha saúde num só lugar.
-                            A função de lembrete para beber água salvou minha hidratação! E os conteúdos de bem-estar
-                            mental são muito acolhedores. Sinto que estou sendo cuidada de verdade. Sem dúvida, é o
-                            melhor app de saúde que já usei!”</p>
+                    <div class="testimonial-box">
+                        <h3>Ana Lúcia Souza, 35<br><span>Curitiba/PR</span></h3>
+                        <p>“O que mais amo no Life+ é como ele integra tudo. Me sinto cuidada de verdade. Sem dúvida, é
+                            o melhor app de saúde que já usei!”</p>
                     </div>
                 </div>
             </section>
+
+
 
             <section class="faq" aria-labelledby="titulo-faq">
                 <div class="container">
                     <h2 id="titulo-faq">Perguntas Frequentes</h2>
 
+                    <div class="faq-buttons">
+                        <a href=""><button class="faq-btn sobre-nos" aria-label="Sobre Nós">Sobre Nós</button></a>
+                        <a href=""><button class="faq-btn funcionalidades"
+                                aria-label="Funcionalidades">Funcionalidades</button></a>
+                        <a href=""><button class="faq-btn nosso-app" aria-label="Nosso Aplicativo">Nosso
+                                Aplicativo</button></a>
+                    </div>
+
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq1">Meus dados de saúde são
-                            compartilhados com profissionais?</button>
+                        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false"
+                            aria-controls="faq1">
+                            Meus dados de saúde são compartilhados com profissionais?
+                            <img src="assets/icons/seta-faq.png" alt="Ícone de seta" class="faq-icon">
+                        </button>
                         <div class="faq-answer" id="faq1" hidden>
-                            <p>Seus dados só são compartilhados com profissionais autorizados mediante seu
-                                consentimento.
-                            </p>
+                            Seus dados permanecem sob seu controle. A plataforma permite que você gere relatórios em PDF
+                            com suas informações de saúde e compartilhe esses documentos com profissionais da sua
+                            confiança, se desejar. Assim, você tem autonomia para decidir com quem dividir sua evolução,
+                            fortalecendo o acompanhamento médico de forma segura e personalizada.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq2">Preciso pagar para usar
-                            a
-                            plataforma?</button>
+                        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false"
+                            aria-controls="faq2">
+                            Preciso pagar para usar a plataforma?
+                            <img src="assets/icons/seta-faq.png" alt="Ícone de seta" class="faq-icon">
+                        </button>
                         <div class="faq-answer" id="faq2" hidden>
-                            <p>Não, o acesso à plataforma é gratuito com recursos básicos. Recursos premium estarão
-                                disponíveis futuramente.</p>
+                            Não! O Life Plus é 100% gratuito. Todas as funcionalidades incluindo registro de hábitos,
+                            relatórios em PDF, gamificação, feedbacks por IA e acompanhamento do ciclo menstrual — estão
+                            disponíveis sem custo algum. Cuidar da sua saúde deve ser acessível, e é isso que
+                            acreditamos.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq3">O que acontece se eu
-                            esquecer de registrar meus hábitos?</button>
+                        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false"
+                            aria-controls="faq3">
+                            O que acontece se eu esquecer de registrar meus hábitos?
+                            <img src="assets/icons/seta-faq.png" alt="Ícone de seta" class="faq-icon">
+                        </button>
                         <div class="faq-answer" id="faq3" hidden>
-                            <p>A plataforma envia lembretes e mantém você motivado com feedbacks personalizados.</p>
+                            Tudo bem! A gente entende que a rotina pode ser corrida. Se você esquecer de registrar algum
+                            hábito, a plataforma envia lembretes suaves para te ajudar a retomar o foco com leveza. E
+                            mesmo nos dias em que não conseguir acompanhar tudo, seus dados anteriores continuam salvos
+                            — porque cada passo da sua jornada importa, inclusive as pausas.
                         </div>
                     </div>
                 </div>
@@ -175,10 +199,9 @@
     <footer role="contentinfo">
         <div class="container-footer-wrapper">
 
-            <!-- LOGO E REDES SOCIAIS -->
             <div class="footer-logo-social">
                 <div class="footer-logo-container">
-                    <img src="assets/icons/Logo.png" alt="Logo Life Plus">
+                    <a href="index.html"><img src="assets/icons/Logo.png" alt="Logo Life Plus"></a>
                 </div>
                 <div class="footer-social">
                     <a href="#" aria-label="Instagram">
@@ -193,35 +216,33 @@
                 </div>
             </div>
 
-            <!-- COLUNAS DE LINKS -->
             <div class="container-footer">
                 <div class="footer-col">
                     <h3>Explore</h3>
                     <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#saude-fisica">Saúde Física</a></li>
-                        <li><a href="#saude-mental">Saúde Mental</a></li>
-                        <li><a href="#ciclo-menstrual">Ciclo Menstrual</a></li>
-                        <li><a href="#tabaco-alcool">Tabagismo e Alcoolismo</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Saúde Física</a></li>
+                        <li><a href="#">Saúde Mental</a></li>
+                        <li><a href="#">Ciclo Menstrual</a></li>
+                        <li><a href="#">Tabagismo e Alcoolismo</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h3>Sobre a Life Plus</h3>
                     <ul>
-                        <li><a href="#quemsomos">Quem somos</a></li>
-                        <li><a href="#nossamissao">Nossa missão</a></li>
+                        <li><a href="#sobrenos">Sobre nós</a></li>
                         <li><a href="#comofunciona">Como funciona</a></li>
+                        <li><a href="#nossamissao">Depoimentos</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h3>Plataforma</h3>
                     <ul>
-                        <li><a href="#funcionalidade">Funcionalidade</a></li>
-                        <li><a href="#incentivo">Incentivo</a></li>
                         <li><a href="#termosdeuso">Termos de uso</a></li>
                         <li><a href="#politicas">Políticas e privacidade</a></li>
+                        <li><a href="#nossoaplicativo">Nosso aplicativo</a></li>
                     </ul>
                 </div>
 
@@ -236,15 +257,31 @@
 
         </div>
 
-        <!-- RODAPÉ FINAL -->
         <div class="footer-bottom">
             <p>© 2025 Life Plus.</p>
             <p>Desenvolvido por Evelin Hashimoto, Flavia Santana e Rebecca Martins</p>
             <p>Projeto FIAP Enterprise Challenge</p>
         </div>
     </footer>
+    <script>
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const expanded = button.getAttribute("aria-expanded") === "true";
+            button.setAttribute("aria-expanded", !expanded);
+            answer.hidden = expanded;
+            const icon = button.querySelector('.faq-icon');
+            if (icon) icon.classList.toggle('rotate');
+        }
 
-
+        function toggleCard(card) {
+            card.classList.toggle('active');
+            const anchor = card.getAttribute("data-anchor");
+            if (anchor) {
+                const section = document.getElementById(anchor);
+                if (section) section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
 </body>
 
 </html>
