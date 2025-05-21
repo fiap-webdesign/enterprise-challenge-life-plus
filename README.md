@@ -72,6 +72,37 @@ Após a análise de perfis potenciais de usuárias, identificamos que o **Life P
 - Frases motivacionais e sugestões de bem-estar mental  
 - Sistema de pontuação também para ações de cuidado emocional (ex: pausa de respiração, meditação)  
 - Feedbacks positivos como: *“Hoje você cuidou de você — isso importa!”*
+## 🎨 Identidade Visual e Decisões de Design
+
+A plataforma **Life Plus** foi desenvolvida com foco na experiência da mulher, promovendo um ambiente acolhedor, intuitivo e acessível. Todas as decisões visuais, técnicas e estruturais foram pensadas para atender mulheres entre **18 e 60 anos**, considerando diferentes níveis de familiaridade com tecnologia.
+
+### ✦ Paleta de Cores  
+As cores utilizadas transmitem calma, leveza e vitalidade. A paleta foi escolhida estrategicamente para equilibrar bem-estar emocional com modernidade, destacando informações importantes sem sobrecarregar a visão.
+
+- **Primária:** tons como o azul `#4EAFE4` e o laranja `#E59013`, que representam confiança e energia.  
+- **Secundária:** cores de apoio para reforçar contrastes e guiar a atenção.  
+- **Base:** tons neutros como o `#F6F4E4`, para manter a leitura confortável e o ambiente limpo.
+
+### ✦ Tipografia  
+Adotamos a fonte **Poppins**, que une boa legibilidade com estilo moderno. A hierarquia tipográfica foi bem definida:
+
+- **Títulos:** ênfase clara para facilitar a localização dos temas.  
+- **Textos e descrições:** leitura fluida mesmo em dispositivos móveis.
+
+### ✦ Estrutura e Grid  
+O layout utiliza um **sistema de 12 colunas com margens de 80px**, garantindo responsividade e organização. Esse padrão facilita a leitura, o uso em diferentes telas e o foco da usuária nos elementos principais.
+
+### ✦ Logotipo e Estilo  
+O logotipo com a fonte **Ventaelove** reforça o aspecto emocional e o cuidado. Ele contrasta com os demais elementos técnicos, trazendo identidade e proximidade à marca.
+
+### ✦ Interatividade e Usabilidade  
+Pensamos a interface para ser **intuitiva, interativa e de fácil navegação**, com elementos que tornam a jornada da usuária mais envolvente:
+
+- **Breadcrumbs** abaixo do cabeçalho ajudam na **localização e contexto** dentro da plataforma.  
+- **Cards informativos e botões destacados**, com ações claras, incentivam o engajamento sem gerar sobrecarga cognitiva.  
+- **Modais personalizados** para feedback (como sucesso no cadastro) evitam redirecionamentos desnecessários e mantêm a usuária no fluxo.  
+- **Animações sutis** e microinterações tornam a experiência mais dinâmica e agradável, sem comprometer a simplicidade.  
+- **Design Mobile-First:** todos os elementos se adaptam bem a dispositivos móveis, considerando o uso recorrente via celular.
 
 
 <h2>Funcionalidades implementadas até o momento</h2>

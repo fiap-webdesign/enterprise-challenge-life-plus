@@ -172,7 +172,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Modal */
 .modal-content {
     border-radius: 20px;
     padding: 30px;
@@ -199,7 +198,6 @@ header {
     background-color: #4eafe4;
 }
 
-/* Footer */
 footer {
     background-color: #F6F4E4;
     padding: 40px 0;
@@ -213,13 +211,6 @@ footer {
     padding: 0 40px;
 }
 
-.footer-logo-social {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
 
 .footer-logo-container img {
     width: 153px;
@@ -227,19 +218,6 @@ footer {
     object-fit: contain;
 }
 
-.footer-social {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.footer-social img {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-}
 
 .container-footer {
     display: grid;
@@ -248,30 +226,6 @@ footer {
     align-items: start;
 }
 
-.footer-col h3 {
-    font-size: 1.125rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col li {
-    margin-bottom: 8px;
-}
-
-.footer-col a {
-    text-decoration: none;
-    color: #555;
-    transition: color 0.2s ease;
-}
-
-.footer-col a:hover {
-    color: #252525;
-}
 
 .footer-bottom {
     text-align: center;
