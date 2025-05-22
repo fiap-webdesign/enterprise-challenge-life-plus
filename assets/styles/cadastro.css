@@ -143,12 +143,38 @@ header {
 
 .cadastro-box input {
     width: 100%;
-    padding: 10px;
+    padding: 14px 12px;
     margin-top: 5px;
     border: none;
-    border-radius: 10px;
-    font-size: 14px;
+    border-radius: 60px;
 }
+
+.senha-container {
+    position: relative;
+    width: 100%;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.icon-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.icon-eye:hover {
+    opacity: 1;
+}
+
 
 .btn-wrapper {
     text-align: center;

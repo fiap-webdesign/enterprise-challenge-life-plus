@@ -20,24 +20,29 @@
     <header role="banner">
         <div class="container-header">
             <h1>
-                <a href="index.html" aria-label="Voltar para a página inicial">
+                <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
                     <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
                 </a>
             </h1>
-            <nav class="menu-central" aria-label="Menu principal">
-                <ul class="nav-list">
-                    <li><a href="#saudefisica">Saúde Física</a></li>
-                    <li><a href="#saudemental">Saúde Mental</a></li>
-                    <li><a href="#ciclomenstrual">Ciclo Menstrual</a></li>
-                    <li><a href="#tabagismoealcoolismo">Tabagismo e Alcoolismo</a></li>
-                </ul>
-            </nav>
-            <div class="login">
-                <a href="login.html">
-                    <img src="/assets/img/manulogin.png" alt="Ícone de usuário" class="icon-user">
+            <div class="usuario-logado">
+                <button id="btnUsuario" class="btn-usuario">
+                    <img src="assets/icons/user_icon_white.png" alt="Ícone do usuário" class="icon-usuario">
+                    <span class="nome-usuario">manuela.pereira</span>
+                    <img src="assets/icons/seta-branca.png" alt="Seta" class="icon-seta" id="iconSeta">
+                </button>
 
-                </a>
+                <div id="dropdownUsuario" class="dropdown-usuario">
+                    <button class="btn-cancelar-modal" onclick="fecharModalUsuario()">
+                        Cancelar
+                        <img src="assets/icons/cancelar-icon.png" alt="Cancelar" class="icon-cancelar" />
+                    </button>
+                    <button class="btn-sair-modal" onclick="window.location.href='login.html'">
+                        Sair
+                        <img src="assets/icons/sair-icon.png" alt="Sair" class="icon-sair" />
+                    </button>
+                </div>
             </div>
+
 
         </div>
     </header>
@@ -45,26 +50,34 @@
     <main role="main">
 
         <section class="monitoramento" aria-labelledby="titulo-monitoramento">
-            <h2 class="depoimentos-titulo">Bem vinda Manuela </h2>
-            <p class="depoimento-p">Este é o seu espaço no Life+. Acompanhe sua jornada de saúde, registre conquistas e
-                cuide de você com mais consciência. </p>
-            <h2 class="depoimentos-titulo">Monitoramento completo da sua saúde </h2>
+            <div class="container">
+                <h2 class="depoimentos-titulo">Bem vinda Manuela!</h2>
+                <p class="depoimento-p">
+                    Este é o seu espaço no Life+.
+                    Acompanhe sua jornada de saúde, registre conquistas e cuide de você com mais consciência.
+                </p>
+                <h2 class="depoimentos-titulo">Monitore seus indíces de saúde:</h2>
+            </div>
             <div class="cards-container">
                 <div class="card" onclick="toggleCard(this)" data-anchor="saudefisica">
-                    <img src="assets/img/img1.png" alt="Ilustração sobre atividade física" class="card-img">
-                    <div class="card-text">Atividade física te ajuda a manter o equilíbrio do corpo.</div>
+                    <a href="#"><img src="assets/img/img1.png"
+                            alt="Ilustração sobre atividade física - link para a página saúde física"
+                            class="card-img"></a>
                 </div>
                 <div class="card" onclick="toggleCard(this)" data-anchor="saudemental">
-                    <img src="assets/img/img2.png" alt="Ilustração sobre saúde mental" class="card-img">
-                    <div class="card-text">Cuide da mente como cuida do corpo. Equilíbrio é tudo.</div>
+                    <a href="#"><img src="assets/img/img2.png"
+                            alt="Ilustração sobre saúde mental - link para a página de saúde mental"
+                            class="card-img"></a>
                 </div>
                 <div class="card" onclick="toggleCard(this)" data-anchor="ciclomenstrual">
-                    <img src="assets/img/img3.png" alt="Ilustração sobre ciclo menstrual" class="card-img">
-                    <div class="card-text">Acompanhe seu ciclo e entenda melhor seu corpo.</div>
+                    <a href="#"><img src="assets/img/img3.png"
+                            alt="Ilustração sobre ciclo menstrual - link para a página ciclo menstrual"
+                            class="card-img"></a>
                 </div>
                 <div class="card" onclick="toggleCard(this)" data-anchor="tabagismoealcoolismo">
-                    <img src="assets/img/img4.png" alt="Ilustração sobre hábitos de saúde" class="card-img">
-                    <div class="card-text">Pequenos hábitos diários fazem grande diferença.</div>
+                    <a href="#"><img src="assets/img/img4.png"
+                            alt="Ilustração sobre hábitos de saúde - link para página alcoolismo e tabagismo"
+                            class="card-img"></a>
                 </div>
             </div>
         </section>
@@ -85,85 +98,24 @@
                 </div>
             </div>
         </div>
+
         <div class="mensagem-container">
             <div class="mensagem-foto">
                 <img src="/assets/img/manulogin2.png" alt="Foto da Manuela" />
             </div>
-            <div class="mensagem-texto">
-                <p>
-                    <span class="destaque">
-                        Você está indo muito bem, Manuela!<br />
-                        Cuidar de si mesma é o maior gesto de amor-próprio. Continue firme — seu corpo e sua mente
-                        agradecem.
-                    </span>
+            <div class="mensagem-conteudo">
+                <p class="mensagem-texto">
+                    <strong>Você está indo muito bem, Manuela!</strong>
+                <p class="mensagem-texto"> Cuidar de si mesma é o maior gesto de amor-próprio.<br>
+                    Continue firme, seu corpo e sua mente agradecem.</p>
                 </p>
             </div>
         </div>
 
 
-
     </main>
 
     <footer role="contentinfo">
-        <div class="container-footer-wrapper">
-
-            <div class="footer-logo-social">
-                <div class="footer-logo-container">
-                    <a href="index.html"><img src="assets/icons/Logo.png" alt="Logo Life Plus"></a>
-                </div>
-                <div class="footer-social">
-                    <a href="#" aria-label="Instagram">
-                        <img src="assets/icons/Instagram.png" alt="Instagram">
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <img src="assets/icons/Linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <img src="assets/icons/facebook.png" alt="Facebook">
-                    </a>
-                </div>
-            </div>
-
-            <div class="container-footer">
-                <div class="footer-col">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Saúde Física</a></li>
-                        <li><a href="#">Saúde Mental</a></li>
-                        <li><a href="#">Ciclo Menstrual</a></li>
-                        <li><a href="#">Tabagismo e Alcoolismo</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Sobre a Life Plus</h3>
-                    <ul>
-                        <li><a href="#sobrenos">Sobre nós</a></li>
-                        <li><a href="#comofunciona">Como funciona</a></li>
-                        <li><a href="#nossamissao">Depoimentos</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Plataforma</h3>
-                    <ul>
-                        <li><a href="#termosdeuso">Termos de uso</a></li>
-                        <li><a href="#politicas">Políticas e privacidade</a></li>
-                        <li><a href="/app.html">Nosso aplicativo</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Suporte</h3>
-                    <ul>
-                        <li><a href="#faleconosco">Fale conosco</a></li>
-                        <li><a href="#tutoriais">Ajuda e tutoriais</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
 
         <div class="footer-bottom">
             <p>© 2025 Life Plus.</p>
@@ -171,6 +123,8 @@
             <p>Projeto FIAP Enterprise Challenge</p>
         </div>
     </footer>
+
+
     <script>
         function toggleFaq(button) {
             const answer = button.nextElementSibling;
@@ -190,6 +144,35 @@
             }
         }
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnUsuario = document.getElementById('btnUsuario');
+            const dropdown = document.getElementById('dropdownUsuario');
+            const iconSeta = document.getElementById('iconSeta');
+
+            btnUsuario.addEventListener('click', (e) => {
+                e.stopPropagation(); // evita conflito com clique fora
+                const isOpen = dropdown.style.display === 'flex';
+                dropdown.style.display = isOpen ? 'none' : 'flex';
+                iconSeta.classList.toggle('rotacionado', !isOpen);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!btnUsuario.contains(e.target) && !dropdown.contains(e.target)) {
+                    dropdown.style.display = 'none';
+                    iconSeta.classList.remove('rotacionado');
+                }
+            });
+        });
+
+        function fecharModalUsuario() {
+            document.getElementById('dropdownUsuario').style.display = 'none';
+            document.getElementById('iconSeta').classList.remove('rotacionado');
+        }
+    </script>
+
+
 </body>
 
 </html>

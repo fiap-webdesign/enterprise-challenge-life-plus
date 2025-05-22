@@ -38,15 +38,18 @@
         <div class="login-box">
             <h2>Entrar</h2>
 
-            <form>
+            <form action="loginrealizado.html" method="get">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <div class="senha-container">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <img src="assets/icons/view-off.png" alt="Mostrar senha" id="toggleSenha" class="icon-eye">
+                </div>
+
                 <div class="buttons">
-                    <button type="button" class="btn-login"
-                        onclick="window.location.href='loginrealizado.html'">Entrar</button>
+                    <button type="submit" class="btn-login">Entrar</button>
                 </div>
             </form>
             <p class="texto-cadastro">Ainda não possui conta? Cadastre-se aqui</p>
@@ -58,12 +61,34 @@
     </main>
 
     <footer role="contentinfo">
+
+        
         <div class="footer-bottom">
             <p>© 2025 Life Plus.</p>
             <p>Desenvolvido por Evelin Hashimoto, Flavia Santana e Rebecca Martins</p>
             <p>Projeto FIAP Enterprise Challenge</p>
         </div>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleSenha = document.getElementById("toggleSenha");
+            const inputSenha = document.getElementById("senha");
+
+            toggleSenha.addEventListener("click", function () {
+                const isPassword = inputSenha.type === "password";
+                inputSenha.type = isPassword ? "text" : "password";
+                toggleSenha.src = isPassword
+                    ? "assets/icons/view.png"         // ícone de olho aberto
+                    : "assets/icons/view-off.png";    // ícone de olho fechado
+                toggleSenha.alt = isPassword
+                    ? "Ocultar senha"
+                    : "Mostrar senha";
+            });
+        });
+    </script>
+
+
 
 </body>
 

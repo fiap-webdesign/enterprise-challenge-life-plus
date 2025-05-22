@@ -292,6 +292,20 @@
             }
         }
 
+
+    function toggleFaq(button) {
+        const answer = document.getElementById(button.getAttribute('aria-controls'));
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        answer.hidden = isExpanded ? true : false;
+
+        button.setAttribute('aria-expanded', !isExpanded);
+
+        button.classList.toggle('open');
+    }
+
+</script>
+
+
     </script>
 
 

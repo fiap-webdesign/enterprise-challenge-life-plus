@@ -395,16 +395,24 @@ section p {
 .faq-btn.sobre-nos {
     background-color: #b0dbf7d7;
     color: #000;
+    border-radius: 60px;
 }
 
 .faq-btn.funcionalidades {
     background-color: #f1ca81bd;
     color: #000;
+    border-radius: 60px;
 }
 
 .faq-btn.nosso-app {
     background-color: #F1FDAF;
     color: #000;
+    border-radius: 60px;
+}
+
+.faq-question.open .faq-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 
 

@@ -67,12 +67,110 @@ header {
     gap: 8px;
 }
 
-.icon-user {
-    width: 85px;
-    height: 85px;
+rio-logado {
+    display: flex;
+    align-items: center;
 }
 
+.btn-usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #303994;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
+.usua .btn-usuario:hover {
+    background-color: #202066;
+}
+
+.icon-usuario,
+.icon-seta {
+    width: 24px;
+    height: 24px;
+}
+
+.nome-usuario {
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.dropdown-usuario {
+    position: absolute;
+    top: calc(100% + 8px);
+    /* aparece 8px abaixo do botão */
+    right: 0;
+    width: 150px;
+    height: 123px;
+    background-color: rgba(141, 157, 255, 0.6);
+    border-radius: 20px;
+    padding: 12px 10px;
+    display: none;
+    /* 🔥 importante: começa oculto */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-logado {
+    position: relative;
+    /* 🔥 isso é essencial para o posicionamento do dropdown */
+    display: flex;
+    align-items: center;
+}
+
+/* Botões internos */
+.btn-cancelar-modal,
+.btn-sair-modal {
+    width: 125px;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.btn-cancelar-modal {
+    background-color: #89c9f8;
+    color: #fff;
+}
+
+.btn-sair-modal {
+    background-color: #E59013;
+    color: #fff;
+}
+
+/* Ícones */
+.icon-cancelar {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-sair {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-seta {
+    transition: transform 0.3s ease;
+}
+
+.icon-seta.rotacionado {
+    transform: rotate(180deg);
+}
 
 
 .container {
@@ -195,105 +293,148 @@ section p {
     background-color: rgba(48, 57, 148, 1);
     transform: scale(1.05);
 }
+
 .relatorio-container {
-  background-color: #f6f4e9;
-  padding: 2rem;
- 
-  margin: 0 auto;
+    background-color: #f6f4e9;
+    padding: 2rem;
+
+    margin: 0 auto;
 }
 
 .relatorio-conteudo {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .relatorio-icone {
- 
-  padding: 1.5rem;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+    padding: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .relatorio-icone img {
-  width: 290px;
-  height: 350px;
+    width: 290px;
+    height: 350px;
 }
 
 .relatorio-texto {
-  max-width: 500px;
-  text-align: center;
+    max-width: 500px;
+    text-align: center;
 }
 
 .relatorio-texto h2 {
-  font-size: 1.2rem;
-  color: #2d2f92;
-  margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #2d2f92;
+    margin-bottom: 0.5rem;
 }
 
 .relatorio-texto p {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .btn-acessar {
-  background-color: #2d2f92;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+    background-color: #2d2f92;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
 }
 
 
 .btn-acessar:hover {
-  background-color: #1d1f6b;
+    background-color: #1d1f6b;
 }
 
-.depoimentos-titulo{
-    margin-left: 50px;
+.depoimentos-titulo,
+.depoimento-p {
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: 1.6;
 }
-.depoimento-p{
-    margin-left: 50px;
+
+.depoimento-p {
+    font-size: 1.1rem;
+    text-wrap: balance;
+    hyphens: auto;
 }
+
+
+
 .mensagem-container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 60px;
+    display: flex;
+    gap: 32px;
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 0 20px;
+    align-items: flex-start;
 }
 
 .mensagem-foto img {
-  width: 700px;
-  height: 200px;
-  object-fit: cover;
-  
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.mensagem-texto p {
-  font-size: 35px;
-  color: #f28c00; 
-  font-weight: 600;
-  gap: 3rem;
-  width: 200%; /* ocupa toda a largura possível */
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
+.mensagem-conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.mensagem-texto,
+.mensagem-texto p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #E59013;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.mensagem-texto {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mensagem-texto strong {
+    animation: pulseHighlight 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes pulseHighlight {
+    from {
+        color: #E59013;
+    }
+
+    to {
+        color: #F1C981;
+    }
 }
 
 .destaque {
-  text-decoration: none;
-  text-underline-offset: 4px;
+    text-decoration: none;
+    text-underline-offset: 4px;
 }
 
 .faq-question[aria-expanded="true"]+.faq-answer {
@@ -598,36 +739,67 @@ footer {
         align-items: center;
     }
 
-    .banner {
-        width: 100%;
-        height: auto;
-        border-radius: 60px;
+
+
+    @media (max-width: 768px) {
+        .mensagem-container {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .mensagem-foto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .mensagem-texto p {
+            font-size: 1.2rem;
+            width: 100%;
+            padding: 0;
+        }
     }
 
-    .banner-image {
-        width: 100%;
-        height: auto;
-        border-radius: 60px;
-    }
+    @media (max-width: 768px) {
+        .relatorio-icone img {
+            width: 100%;
+            height: auto;
+        }
 
-    .inscrever-btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        .relatorio-texto {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+
+        .relatorio-texto h2 {
+            font-size: 1.1rem;
+        }
+
+        .relatorio-texto p {
+            font-size: 0.95rem;
+        }
     }
 
     @media (max-width: 768px) {
 
-        .como-bloco-superior,
-        .como-bloco-inferior {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .como-bloco-superior p,
-        .como-bloco-inferior p {
+        .depoimentos-titulo,
+        .depoimento-p {
+            margin-left: 20px;
+            margin-right: 20px;
             text-align: center;
         }
     }
+
+    @media (max-width: 768px) {
+        .depoimentos-titulo {
+            font-size: 1.5rem;
+        }
+
+        .depoimento-p {
+            font-size: 1rem;
+        }
+    }
+
 
 
     .footer-social {
@@ -715,4 +887,12 @@ footer {
         width: 100%;
         max-width: 250px;
     }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
