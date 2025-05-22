@@ -48,41 +48,125 @@ header {
     width: 150px;
 }
 
-.menu-central ul {
-    list-style: none;
+.usuario-logado {
+    position: relative;
     display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.menu-central a {
-    text-decoration: none;
-    color: #252525;
+.btn-usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #303994;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
     font-weight: 500;
-}
-.imagem-central {
-  max-width: 98vw;
-  margin-top: 40px;
-  max-height: 120vh;
-  margin-left: 600px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-/* Botão de gerar PDF */
+.usua .btn-usuario:hover {
+    background-color: #202066;
+}
+
+.icon-usuario,
+.icon-seta {
+    width: 24px;
+    height: 24px;
+}
+
+.nome-usuario {
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.dropdown-usuario {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 150px;
+    height: 123px;
+    background-color: rgba(141, 157, 255, 0.6);
+    border-radius: 20px;
+    padding: 12px 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-logado {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-cancelar-modal,
+.btn-sair-modal {
+    width: 125px;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.btn-cancelar-modal {
+    background-color: #89c9f8;
+    color: #fff;
+}
+
+.btn-sair-modal {
+    background-color: #E59013;
+    color: #fff;
+}
+
+
+/* Ícones */
+.icon-cancelar {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-sair {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-seta {
+    transition: transform 0.3s ease;
+}
+
+.icon-seta.rotacionado {
+    transform: rotate(180deg);
+}
+
+
+
 .botao-pdf {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #D0D919;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-left: 945px;
-  margin-top: 15px;
-  margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #D0D919;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 945px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 
@@ -106,7 +190,7 @@ footer {
     position: relative;
 }
 
-/* Footer geral */
+
 footer {
     background-color: #F6F4E4;
     padding: 40px 0;
@@ -114,14 +198,12 @@ footer {
     width: 100%;
 }
 
-/* Wrapper principal */
 .container-footer-wrapper {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-/* Logo e redes sociais */
 .footer-logo-social {
     display: flex;
     align-items: center;
@@ -130,7 +212,7 @@ footer {
     margin-bottom: 40px;
 }
 
-/* Logo */
+
 .footer-logo-container {
     flex: 1;
     min-width: 153px;
@@ -157,7 +239,7 @@ footer {
     cursor: pointer;
 }
 
-/* Colunas */
+
 .container-footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -166,39 +248,6 @@ footer {
     text-align: left;
 }
 
-.footer-col h3 {
-    font-size: 1.125rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col li {
-    margin-bottom: 8px;
-}
-
-.footer-col a {
-    text-decoration: none;
-    color: #555;
-    transition: color 0.2s ease;
-}
-
-.footer-col a:hover {
-    color: #252525;
-}
-
-/* Rodapé inferior */
-.footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.875rem;
-    color: #777;
-    padding: 20px;
-}
 
 .sr-only {
     position: absolute;
@@ -300,6 +349,17 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+#gerarPdfBtn {
+    background-color: #D0D919;
+    border: none;
+    color: #202066;
+    border-radius: 60px;
+}
+
+#gerarPdfBtn:hover {
+    background-color: #cfd919ab;
 }
 
 @media (max-width: 768px) {
