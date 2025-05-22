@@ -50,7 +50,7 @@ header {
 .menu-central ul {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
