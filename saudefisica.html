@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saúde Física - Life+</title>
+    <link rel="stylesheet" href="./assets/styles/saudefisica.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container-header">
+            <h1>
+                <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
+                    <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
+                </a>
+            </h1>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Você está aqui">
+        <div class="container">
+            <a href="./loginrealizado.html">Perfil</a> &gt; <span>Saúde Física</span>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="container">
+            <img src="./assets/img/banner-saude_fisica.png" alt="Banner Saúde Física" />
+        </div>
+    </section>
+
+    <main class="container grid-container">
+        <div class="row">
+            <div class="card">
+                <h2>Atividade física</h2>
+                <select id="atividade">
+                    <option value="">Atividade realizada</option>
+                    <option value="Caminhada">Caminhada</option>
+                    <option value="Corrida">Corrida</option>
+                    <option value="Danca">Dança</option>
+                    <option value="Musculacao">Musculação</option>
+                    <option value="Natacao">Natação</option>
+                    <option value="Yoga">Yoga</option>
+                </select>
+                <input type="time" id="duracao" placeholder="Duração" />
+                <button onclick="registrarAtividade()">Registrar</button>
+            </div>
+
+            <div class="card">
+                <h2>Avanço semanal</h2>
+                <canvas id="graficoBarras" width="100" height="100"></canvas>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <h2>Controle de sono</h2>
+                <input type="time" id="horaDormiu" placeholder="Hora que dormiu" />
+                <input type="time" id="horaAcordou" placeholder="Hora que acordou" />
+                <button onclick="calcularSono()">Registrar</button>
+                <p id="infoSono">Meta: 8h | Você dormiu: 0h</p>
+            </div>
+
+            <div class="card">
+                <h2>Ingestão de água</h2>
+                <div class="cup-container">
+                    <div class="cup" id="big-cup">
+                        <div class="remained" id="remained">
+                            <span id="liters"></span>
+                            <small>Restante</small>
+                        </div>
+                        <div class="percentage" id="percentage"></div>
+                    </div>
+                </div>
+                <p class="text">Quantos copos de água você bebeu hoje?</p>
+                <div class="cups">
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                    <div class="cup cup-small">250 ml</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/saudefisica.js"></script>
+</body>
+
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saúde Física - Life+</title>
+    <link rel="stylesheet" href="./assets/styles/saudefisica.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header role="banner">
+        <div class="container-header">
+            <h1>
+                <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
+                    <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
+                </a>
+            </h1>
+            <div class="usuario-logado">
+
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Você está aqui">
+        <div class="container">
+            <a href="./loginrealizado.html">Perfil</a> &gt; <span>Saúde Física</span>
+        </div>
+    </nav>
+
+        <section class="banner">
+            <img src="./assets/img/banner-saude_fisica.png" alt="Banner Saúde Física" />
+        </section>
+
+    <main class="grid-container">
+        <div class="card">
+            <h2>Atividade física</h2>
+            <select id="atividade">
+                <option value="">Atividade realizada</option>
+                <option value="Caminhada">Caminhada</option>
+                <option value="Corrida">Corrida</option>
+                <option value="Danca">Dança</option>
+                <option value="Musculacao">Musculação</option>
+                <option value="Natacao">Natação</option>
+                <option value="Yoga">Yoga</option>
+            </select>
+            <input type="time" id="duracao" class="tempo-personalizado" placeholder="Duração" />
+            <button onclick="registrarAtividade()">Registrar</button>
+        </div>
+
+        <div class="card">
+            <h2>Avanço semanal</h2>
+            <canvas id="graficoBarras" width="100" height="100"></canvas>
+        </div>
+
+        <div class="card">
+            <h2>Controle de sono</h2>
+            <input type="time" id="horaDormiu" placeholder="Hora que dormiu" onfocus="this.type='time'" />
+            <input type="time" id="horaAcordou" placeholder="Hora que acordou" onfocus="this.type='time'" />
+            <button onclick="calcularSono()">Registrar</button>
+            <p id="infoSono">Meta: 8h | Você dormiu: 0h</p>
+        </div>
+
+        <div class="card agua-card">
+            <h2>Ingestão de água</h2>
+            <div class="cup-container">
+                <div class="cup" id="big-cup">
+                    <div class="remained" id="remained">
+                        <span id="liters"></span>
+                        <small>Restante</small>
+                    </div>
+                    <div class="percentage" id="percentage"></div>
+                </div>
+            </div>
+            <p class="text">Quantos copos de água você bebeu hoje?</p>
+            <div class="cups">
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+                <div class="cup cup-small">250 ml</div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/saudefisica.js"></script>
+</body>
+
+
+</html>

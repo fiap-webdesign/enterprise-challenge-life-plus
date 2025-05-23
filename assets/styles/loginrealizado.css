@@ -46,17 +46,6 @@ header {
     width: 150px;
 }
 
-.menu-central ul {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-}
-
-.menu-central a {
-    text-decoration: none;
-    color: #252525;
-    font-weight: 500;
-}
 
 .login a {
     display: flex;

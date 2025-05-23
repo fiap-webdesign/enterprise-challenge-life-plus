@@ -152,7 +152,16 @@ header {
     transform: rotate(180deg);
 }
 
+.breadcrumb {
+    margin-top: 16px;
+}
 
+.imagem-central {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+}
 
 .botao-pdf {
     margin-top: 20px;
@@ -204,40 +213,6 @@ footer {
     padding: 0 40px;
 }
 
-.footer-logo-social {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-
-.footer-logo-container {
-    flex: 1;
-    min-width: 153px;
-}
-
-.footer-logo-container img {
-    width: 153.32px;
-    height: 61px;
-    object-fit: contain;
-}
-
-/* Redes sociais */
-.footer-social {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.footer-social img {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-}
 
 
 .container-footer {
@@ -246,6 +221,18 @@ footer {
     gap: 20px;
     align-items: start;
     text-align: left;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.875rem;
+    color: #777;
+    padding: 20px 40px; /* mantém espaçamento interno lateral */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
