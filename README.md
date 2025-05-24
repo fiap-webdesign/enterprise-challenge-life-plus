@@ -143,6 +143,8 @@ O processo está em evolução, com todas contribuindo ativamente em diferentes 
 Link da documentação: [Documentação Life Plus](https://www.notion.so/1d094b73ae5080e59169c23d77f23fe7?v=1d094b73ae508078b811000c7512039a&pvs=4)<br>
 Link do Figma: [Protótipo](https://www.figma.com/design/dCNEopczakwsf3lQJQwdoP/Projeto-Entreprise-Challenge?node-id=81-311&t=FyaysI9UU1LKKghw-1) <br>
 Link da Identidade Visual: [Identidade Visual - Figma](https://www.figma.com/design/dCNEopczakwsf3lQJQwdoP/Projeto-Entreprise-Challenge?node-id=192-724&t=ChM7P0QNBof6u87E-1)
+Link do Vercel: [Life Plus - Vercel](https://vercel.com/rebeccas-projects-05a98442/enterprise-challenge-life-plus)
+Link do Youtube: [Life Plus - Youtube](https://youtu.be/8KtD8_irkCM?si=knCJ5vm48wEwKxOg)
 
 
 <br>![Logo da Life Plus](/assets/img/logo_readme.png)
