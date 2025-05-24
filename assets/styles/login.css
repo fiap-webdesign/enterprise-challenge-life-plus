@@ -293,7 +293,6 @@ footer {
     border: 0;
 }
 
-/* Responsividade do código */
 @media (max-width: 1024px) {
     .container-header {
         flex-direction: column;

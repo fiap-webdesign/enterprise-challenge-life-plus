@@ -138,7 +138,6 @@ rio-logado {
     color: #fff;
 }
 
-/* Ícones */
 .icon-cancelar {
     width: 30px;
     height: 30px;
@@ -265,7 +264,6 @@ section p {
     height: 50px;
     line-height: 50px;
     background-color: rgba(48, 57, 148, 0.9);
-    /* Cor 303994 com leve transparência */
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -599,7 +597,6 @@ footer {
     margin-top: 10px;
 }
 
-/*Responsividade*/
 
 @media (max-width: 1024px) {
     .container-header {
@@ -726,7 +723,6 @@ footer {
     }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .footer-logo-social {
         flex-direction: column;

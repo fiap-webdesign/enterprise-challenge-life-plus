@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabagismo e Alcoolismo - Life+</title>
+    <link rel="stylesheet" href="./assets/styles/tabagismo.css" />
+    <link rel="icon" href="./assets/icons/favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container-header">
+            <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
+                <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Você está aqui">
+        <div class="container">
+            <a href="./loginrealizado.html">Perfil</a> &gt; <span>Tabagismo e Alcoolismo</span>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="container">
+            <img src="./assets/img/Banner Tela Tabagismo e Alcoolismo.png" alt="Banner Tabagismo e Alcoolismo" />
+        </div>
+    </section>
+
+    <main class="container grid-container">
+        <div class="row">
+            <div class="card">
+                <h2>Tabagismo</h2>
+                <label for="cigarrosDia">Quantidade fumada por dia:</label>
+                <input type="number" id="cigarrosDia" placeholder="Ex: 10" min="0" />
+                <label for="anosFumando">Anos fumando:</label>
+                <input type="number" id="anosFumando" placeholder="Ex: 5" min="0" />
+                <button onclick="registrarTabagismo()">Registrar</button>
+                <p id="infoTabagismo">Você fuma 0 cigarros por dia há 0 anos.</p>
+            </div>
+
+            <div class="card">
+                <h2>Alcoolismo</h2>
+                <label for="frequenciaAlcool">Frequência ingerida semanalmente:</label>
+                <select id="frequenciaAlcool">
+                    <option value="">Selecione</option>
+                    <option value="1">1 vez por semana</option>
+                    <option value="2">2-3 vezes por semana</option>
+                    <option value="4">4 ou mais vezes por semana</option>
+                </select>
+                <label for="quantidadeAlcool">Quantidade por vez (ml):</label>
+                <input type="number" id="quantidadeAlcool" placeholder="Ex: 500" min="0" />
+                <button onclick="registrarAlcoolismo()">Registrar</button>
+                <p id="infoAlcoolismo">Consumo semanal: 0 ml.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <h2>Avanço Diário</h2>
+                <canvas id="graficoResumo" height="200"></canvas>
+            </div>
+
+            <div class="card">
+                <h2>Motivaçôes do Dia</h2>
+                <div class="carrossel">
+                    <button onclick="mudarFrase(-1)">&#10094;</button>
+                    <p id="fraseMotivacional">Você é mais forte do que pensa.</p>
+                    <button onclick="mudarFrase(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/tabagismo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saúde Mental - Life Plus</title>
+    <link rel="stylesheet" href="./assets/styles/saudemental.css" />
+    <link rel="icon" href="./assets/icons/favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container-header">
+            <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
+                <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Você está aqui">
+        <div class="container">
+            <a href="./loginrealizado.html">Perfil</a> &gt; <span>Saúde Mental</span>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="container">
+            <img src="./assets/img/banner-saude_mental.png" alt="Banner Saúde Mental" />
+        </div>
+    </section>
+
+    <main class="container grid-container">
+        <div class="row">
+            <div class="card">
+                <h2>Como está seu humor hoje?</h2>
+                <div class="humor-opcoes">
+                    <button onclick="selecionarHumor('ruim')">
+                        <img src="./assets/img/icone-ruim.png" alt="Ruim">
+                    </button>
+                    <button onclick="selecionarHumor('regular')">
+                        <img src="./assets/img/icone-regular.png" alt="Regular">
+                    </button>
+                    <button onclick="selecionarHumor('bom')">
+                        <img src="./assets/img/icone-bom.png" alt="Bom">
+                    </button>
+                    <button onclick="selecionarHumor('otimo')">
+                        <img src="./assets/img/icone-otimo.png" alt="Ótimo">
+                    </button>
+                </div>
+
+                <div class="emoji-exibido">
+                    <img id="imgHumorSelecionado" src="" alt="Humor Selecionado">
+                </div>
+
+            </div>
+
+            <!-- Card 2: Avanço Diário -->
+            <div class="card">
+                <h2>Avanço Diário</h2>
+                <canvas id="graficoResumo" height="200"></canvas>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Card 3: Diário -->
+            <div class="card">
+                <h2>Diário Virtual</h2>
+                <textarea id="diarioTexto" rows="6" placeholder="Escreva como se sente hoje..."></textarea>
+                <button onclick="salvarDiario()">Salvar</button>
+                <p id="mensagemDiario"></p>
+            </div>
+
+            <!-- Card 4: Frases Motivacionais -->
+            <div class="card">
+                <h2>Motivações do Dia</h2>
+                <div class="carrossel">
+                    <button onclick="mudarFrase(-1)">&#10094;</button>
+                    <p id="fraseMotivacional">Você é mais forte do que pensa.</p>
+                    <button onclick="mudarFrase(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/saudemental.js"></script>
+</body>
+
+</html>

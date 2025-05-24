@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciclo Menstrual - Life+</title>
+    <link rel="stylesheet" href="./assets/styles/ciclomenstrual.css" />
+    <link rel="icon" href="./assets/icons/favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container-header">
+            <h1>
+                <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
+                    <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
+                </a>
+            </h1>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Você está aqui">
+        <div class="container">
+            <a href="./loginrealizado.html">Perfil</a> &gt; <span>Ciclo Menstrual</span>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="container">
+            <img src="./assets/img/banner-ciclomenstrual.png" alt="Banner Ciclo Menstrual" />
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="card card-menstruacao">
+                <h2>Registrar Menstruação</h2>
+
+                <div class="grupo-dropdown">
+                    <div class="grupo-campo">
+                        <label for="inicioCiclo">Início do Ciclo</label>
+                        <input type="date" id="inicioCiclo" class="botao-data-select" />
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="fimCiclo">Fim do Ciclo</label>
+                        <input type="date" id="fimCiclo" class="botao-data-select" />
+                    </div>
+                </div>
+
+                <button onclick="registrarCiclo()">Registrar</button>
+
+
+                <p class="texto-previsto">A data da prevista do próximo ciclo é:</p>
+                <button class="botao-data"></button>
+
+                <p class="alerta-ovulacao">
+                    <span class="icone-ovulacao">🔔</span> Você está no período de ovulação!
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Análise do Ciclo</h2>
+                <canvas id="graficoResumo" width="100%" height="200"></canvas>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/ciclomenstrual.js"></script>
+
+</body>
+
+
+
+</html>

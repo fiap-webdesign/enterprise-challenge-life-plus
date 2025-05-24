@@ -71,7 +71,6 @@ header {
     height: 20px;
 }
 
-/* Breadcrumbs */
 .breadcrumbs {
     width: 100%;
     max-width: 1440px;
@@ -261,7 +260,6 @@ footer {
     padding: 20px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .container-header {
         flex-direction: column;
