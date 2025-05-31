@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma Life Plus: evoluir com leveza e propósito!">
+    <title>Life Plus</title>
+    <link rel="stylesheet" href="./assets/styles/loginrealizado.css">
+    <link rel="icon" href="./assets/icons/favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header role="banner">
+        <div class="container-header">
+            <h1>
+                <a href="./loginrealizado.html" aria-label="Voltar para a página inicial">
+                    <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo">
+                </a>
+            </h1>
+            <div class="usuario-logado">
+                <button id="btnUsuario" class="btn-usuario">
+                    <img src="./assets/icons/user_icon_white.png" alt="Ícone do usuário" class="icon-usuario">
+                    <span class="nome-usuario">manuela.pereira</span>
+                    <img src="./assets/icons/seta-branca.png" alt="Seta" class="icon-seta" id="iconSeta">
+                </button>
+
+                <div id="dropdownUsuario" class="dropdown-usuario">
+                    <button class="btn-cancelar-modal" onclick="fecharModalUsuario()">
+                        Cancelar
+                        <img src="./assets/icons/cancelar-icon.png" alt="Cancelar" class="icon-cancelar" />
+                    </button>
+                    <button class="btn-sair-modal" onclick="window.location.href='login.html'">
+                        Sair
+                        <img src="./assets/icons/sair-icon.png" alt="Sair" class="icon-sair" />
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="monitoramento" aria-labelledby="titulo-monitoramento">
+            <div class="container">
+                <h2 class="depoimentos-titulo">Bem vinda Manuela!</h2>
+                <p class="depoimento-p">
+                    Este é o seu espaço no Life+.
+                    Acompanhe sua jornada de saúde, registre conquistas e cuide de você com mais consciência.
+                </p>
+                <h2 class="depoimentos-titulo">Monitore seus indíces de saúde:</h2>
+            </div>
+            <div class="cards-container">
+                <div class="card" onclick="toggleCard(this)" data-anchor="saudefisica">
+                    <a href="./saudefisica.html"><img src="./assets/img/img1.png"
+                            alt="Ilustração sobre atividade física - link para a página saúde física"
+                            class="card-img"></a>
+                </div>
+                <div class="card" onclick="toggleCard(this)" data-anchor="saudemental">
+                    <a href="./saudemental.html"><img src="./assets/img/img2.png"
+                            alt="Ilustração sobre saúde mental - link para a página de saúde mental"
+                            class="card-img"></a>
+                </div>
+                <div class="card" onclick="toggleCard(this)" data-anchor="ciclomenstrual">
+                    <a href="./ciclomenstrual.html"><img src="./assets/img/img3.png"
+                            alt="Ilustração sobre ciclo menstrual - link para a página ciclo menstrual"
+                            class="card-img"></a>
+                </div>
+                <div class="card" onclick="toggleCard(this)" data-anchor="tabagismoealcoolismo">
+                    <a href="./tabagismo.html"><img src="./assets/img/img4.png"
+                            alt="Ilustração sobre hábitos de saúde - link para página alcoolismo e tabagismo"
+                            class="card-img"></a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="relatorio-container">
+            <div class="relatorio-conteudo">
+                <div class="relatorio-icone">
+                    <img src="./assets/img/relatorio (2).png" alt="Ícone Relatório Médico" />
+                </div>
+                <div class="relatorio-texto">
+                    <h2>Relatório Médico</h2>
+                    <p>
+                        Seu novo relatório médico está disponível. Acompanhe seus resultados com atenção e compartilhe
+                        com seu profissional de saúde se necessário.
+                    </p>
+                    <a href="./relatorio.html" class="cta-button">Acessar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mensagem-container">
+            <div class="mensagem-foto">
+                <img src="./assets/img/manulogin2.png" alt="Foto da Manuela" />
+            </div>
+            <div class="mensagem-conteudo">
+                <p class="mensagem-texto">
+                    <strong>Você está indo muito bem, Manuela!</strong>
+                <p class="mensagem-texto"> Cuidar de si mesma é o maior gesto de amor-próprio.<br>
+                    Continue firme, seu corpo e sua mente agradecem.</p>
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer role="contentinfo">
+
+        <div class="footer-bottom">
+            <p>© 2025 Life Plus.</p>
+            <p>Desenvolvido por Evelin Hashimoto, Flavia Santana e Rebecca Martins</p>
+            <p>Projeto FIAP Enterprise Challenge</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const expanded = button.getAttribute("aria-expanded") === "true";
+            button.setAttribute("aria-expanded", !expanded);
+            answer.hidden = expanded;
+            const icon = button.querySelector('.faq-icon');
+            if (icon) icon.classList.toggle('rotate');
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('active');
+            const anchor = card.getAttribute("data-anchor");
+            if (anchor) {
+                const section = document.getElementById(anchor);
+                if (section) section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnUsuario = document.getElementById('btnUsuario');
+            const dropdown = document.getElementById('dropdownUsuario');
+            const iconSeta = document.getElementById('iconSeta');
+
+            btnUsuario.addEventListener('click', (e) => {
+                e.stopPropagation(); // evita conflito com clique fora
+                const isOpen = dropdown.style.display === 'flex';
+                dropdown.style.display = isOpen ? 'none' : 'flex';
+                iconSeta.classList.toggle('rotacionado', !isOpen);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!btnUsuario.contains(e.target) && !dropdown.contains(e.target)) {
+                    dropdown.style.display = 'none';
+                    iconSeta.classList.remove('rotacionado');
+                }
+            });
+        });
+
+        function fecharModalUsuario() {
+            document.getElementById('dropdownUsuario').style.display = 'none';
+            document.getElementById('iconSeta').classList.remove('rotacionado');
+        }
+    </script>
+
+
+</body>
+
+</html>

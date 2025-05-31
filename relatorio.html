@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Plataforma Life Plus: evoluir com leveza e propósito!" />
+    <title>Life Plus</title>
+    <link rel="stylesheet" href="./assets/styles/relatorio.css" />
+    <link rel="icon" href="./assets/icons/favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header role="banner">
+        <div class="container-header">
+            <h1>
+                <a href="./index.html" aria-label="Voltar para a página inicial">
+                    <img src="./assets/icons/Logo.png" alt="Logo da plataforma Life Plus" class="logo" />
+                </a>
+            </h1>
+
+            <div class="usuario-logado">
+                <button id="btnUsuario" class="btn-usuario">
+                    <img src="./assets/icons/user_icon_white.png" alt="Ícone do usuário" class="icon-usuario">
+                    <span class="nome-usuario">manuela.pereira</span>
+                    <img src="./assets/icons/seta-branca.png" alt="Seta" class="icon-seta" id="iconSeta">
+                </button>
+
+                <div id="dropdownUsuario" class="dropdown-usuario">
+                    <button class="btn-cancelar-modal" onclick="fecharModalUsuario()">
+                        Cancelar
+                        <img src="./assets/icons/cancelar-icon.png" alt="Cancelar" class="icon-cancelar" />
+                    </button>
+                    <button class="btn-sair-modal" onclick="window.location.href='login.html'">
+                        Sair
+                        <img src="./assets/icons/sair-icon.png" alt="Sair" class="icon-sair" />
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Você está aqui">
+        <div class="container">
+            <a href="./loginrealizado.html">Perfil</a> &gt; <span>Relatório de saúde</span>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container2 text-center my-4">
+            <img src="./assets/img/Relatorio-de-saúde 1.png" alt="Imagem Central" class="imagem-central mb-3" />
+            <button id="gerarPdfBtn" class="btn btn-primary btn-lg">
+                Gerar PDF
+            </button>
+            <div id="alertMsg" class="alert alert-success mt-3 fade" role="alert" style="display:none;">
+                O PDF FOI ENVIADO AO SEU E-MAIL.
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const btn = document.getElementById('gerarPdfBtn');
+        const alertMsg = document.getElementById('alertMsg');
+
+        btn.addEventListener('click', () => {
+
+            alertMsg.style.display = 'block';
+            alertMsg.classList.add('show');
+
+
+            setTimeout(() => {
+                alertMsg.classList.remove('show');
+
+
+                setTimeout(() => {
+                    alertMsg.style.display = 'none';
+                }, 150);
+            }, 3000);
+        });
+    </script>
+</body>
+
+
+<footer role="contentinfo">
+    <div class="container-footer-wrapper">
+
+        <div class="footer-bottom">
+            <p>© 2025 Life Plus.</p>
+            <p>Desenvolvido por Evelin Hashimoto, Flavia Santana e Rebecca Martins</p>
+            <p>Projeto FIAP Enterprise Challenge</p>
+        </div>
+</footer>
+<script>
+    function toggleFaq(button) {
+        const answer = button.nextElementSibling;
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !expanded);
+        answer.hidden = expanded;
+        const icon = button.querySelector('.faq-icon');
+        if (icon) icon.classList.toggle('rotate');
+    }
+
+    function toggleCard(card) {
+        card.classList.toggle('active');
+        const anchor = card.getAttribute("data-anchor");
+        if (anchor) {
+            const section = document.getElementById(anchor);
+            if (section) section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+</script>
+
+<script>
+    function toggleFaq(button) {
+        const answer = button.nextElementSibling;
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !expanded);
+        answer.hidden = expanded;
+        const icon = button.querySelector('.faq-icon');
+        if (icon) icon.classList.toggle('rotate');
+    }
+
+    function toggleCard(card) {
+        card.classList.toggle('active');
+        const anchor = card.getAttribute("data-anchor");
+        if (anchor) {
+            const section = document.getElementById(anchor);
+            if (section) section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btnUsuario = document.getElementById('btnUsuario');
+        const dropdown = document.getElementById('dropdownUsuario');
+        const iconSeta = document.getElementById('iconSeta');
+
+        btnUsuario.addEventListener('click', (e) => {
+            e.stopPropagation(); // evita conflito com clique fora
+            const isOpen = dropdown.style.display === 'flex';
+            dropdown.style.display = isOpen ? 'none' : 'flex';
+            iconSeta.classList.toggle('rotacionado', !isOpen);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!btnUsuario.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.style.display = 'none';
+                iconSeta.classList.remove('rotacionado');
+            }
+        });
+    });
+
+    function fecharModalUsuario() {
+        document.getElementById('dropdownUsuario').style.display = 'none';
+        document.getElementById('iconSeta').classList.remove('rotacionado');
+    }
+</script>
+
+</body>
+
+</html>

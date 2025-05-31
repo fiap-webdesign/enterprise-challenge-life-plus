@@ -1,0 +1,340 @@
+:root {
+    --cor-fundo: #f8f6e3;
+    --cor-lilas: #b5c3ff;
+    --cor-lilas-escuro: #6c73c6;
+    --cor-texto: #2e2e2e;
+    --cor-borda: #b5c3ff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+
+.container-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin: 20px 0;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: underline;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 25px;
+    padding-bottom: 20px;
+    justify-items: center;
+}
+
+
+.card {
+    background-color: var(--cor-fundo);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-width: 320px;
+    min-height: 280px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+
+.card h2 {
+    color: #303994;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#graficoResumo {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+}
+
+
+.card input[type="date"],
+.card select {
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid var(--cor-borda);
+    font-size: 1rem;
+    background-color: #303994;
+    color: var(--cor-texto);
+}
+
+.card button {
+    background-color: var(--cor-lilas);
+    border: none;
+    color: #303994;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+.card button:hover {
+    background-color: var(--cor-lilas-escuro);
+    color: white;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+
+.botoes-fluxo {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.btn-fluxo {
+    background-color: var(--cor-lilas);
+    border: 2px solid var(--cor-lilas-escuro);
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-weight: 500;
+    color: var(--cor-texto);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-fluxo:hover {
+    background-color: var(--cor-lilas-escuro);
+    color: #303994;
+}
+
+input[type="date"].botao-data-select {
+    background-color: #A4B6FF !important;
+    color: #303994 !important;
+    border: none !important;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 60px !important;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    appearance: none;
+    width: 160px;
+    position: relative;
+}
+
+.botao-data p {
+    color: #303994;
+}
+
+input[type="date"].botao-data-select::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.switch-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.switch-label input[type="checkbox"] {
+    appearance: none;
+    width: 42px;
+    height: 24px;
+    background-color: var(--cor-lilas);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.switch-label input[type="checkbox"]::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.switch-label input[type="checkbox"]:checked {
+    background-color: var(--cor-lilas-escuro);
+}
+
+.switch-label input[type="checkbox"]:checked::before {
+    transform: translateX(18px);
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .breadcrumb {
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+.card-menstruacao {
+    font-size: 1.3rem;
+    color: var(--cor-lilas-escuro);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.grupo-campo label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--cor-texto);
+}
+
+
+
+.grupo-dropdown {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.grupo-dropdown select {
+    background-color: var(--cor-lilas);
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    appearance: none;
+}
+
+.texto-previsto {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.texto-previsto p {
+        color: #303994;
+}
+
+.botao-data {
+    background-color: var(--cor-lilas);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.alerta-ovulacao {
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.icone-ovulacao {
+    font-size: 1.2rem;
+}

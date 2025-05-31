@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #E59013;
+    --cor-secundaria: #F1C981;
+    --cor-base1: #252525;
+    --cor-base2: #F6F4E4;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    color: var(--cor-base1);
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-header {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin: 32px auto 10px;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.breadcrumb span {
+    color: #999;
+    font-size: 16px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--cor-base2);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    color: var(--cor-primaria);
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    background: var(--cor-secundaria);
+    border: none;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.humor-opcoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.humor-opcoes button {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.humor-opcoes img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+    transition: transform 0.2s;
+}
+
+.humor-opcoes img:hover {
+    transform: scale(1.1);
+}
+
+.emoji-exibido {
+    margin-top: 15px;
+}
+
+.emoji-exibido img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto 0;
+}
+
+#imgHumorSelecionado {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 10px auto 0;
+    display: none;
+}
+
+
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.carrossel p {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--cor-base1);
+    transition: opacity 0.2s ease;
+}
+
+.carrossel button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.carrossel button:hover {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
